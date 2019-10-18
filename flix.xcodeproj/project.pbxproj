@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC34D902235A43D8009B98CE /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34D901235A43D8009B98CE /* MovieCell.swift */; };
 		FC5C7A9E235760D900341900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7A9D235760D900341900 /* AppDelegate.swift */; };
 		FC5C7AA0235760D900341900 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7A9F235760D900341900 /* SceneDelegate.swift */; };
 		FC5C7AA2235760D900341900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7AA1235760D900341900 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC34D901235A43D8009B98CE /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FC5C7A9A235760D900341900 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5C7A9D235760D900341900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC5C7A9F235760D900341900 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				FC5C7A9F235760D900341900 /* SceneDelegate.swift */,
 				FC5C7AA1235760D900341900 /* ViewController.swift */,
 				FC5C7AA3235760D900341900 /* Main.storyboard */,
+				FC34D901235A43D8009B98CE /* MovieCell.swift */,
 				FC5C7ACD2357976200341900 /* MoviesViewController.swift */,
 				FC5C7AA6235760DA00341900 /* Assets.xcassets */,
 				FC5C7AA8235760DA00341900 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				FC5C7AA2235760D900341900 /* ViewController.swift in Sources */,
 				FC5C7A9E235760D900341900 /* AppDelegate.swift in Sources */,
 				FC5C7AA0235760D900341900 /* SceneDelegate.swift in Sources */,
+				FC34D902235A43D8009B98CE /* MovieCell.swift in Sources */,
 				FC5C7ACE2357976200341900 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

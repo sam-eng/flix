@@ -8,14 +8,17 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController {
+class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     // MARK: - Properties
     var movies = [[String:Any]]()
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         retrieveInfo()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
 
@@ -35,11 +38,31 @@ class MoviesViewController: UIViewController {
                 self.movies = dataDictionary["results"] as! [[String:Any]]
                 // TODO: Store the movies in a property to use elsewhere
                 // TODO: Reload your table view data
-
+                self.tableView.reloadData()
             }
         }
         task.resume()
     }
     
+    // MARK: - TableView Required Functions
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movies.count
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+        let movie = movies[indexPath.row]
+        let title = movie["title"] as! String
+        let synopsis = movie["overview"] as! String
+        cell.titleLabel.text = title
+        cell.synopsisLabel.text = synopsis
+        
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = movie["posterPath"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
+        
+        
+        
+        return cell
+    }
 }
