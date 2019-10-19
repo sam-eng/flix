@@ -14,12 +14,14 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [X] (3pts) User can view the movie poster image for each movie.
 
 #### BONUS
-- [ ] (2pt) User can view the app on various device sizes and orientations.
+- [X] (2pt) User can view the app on various device sizes and orientations.
 - [ ] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
 
-GIF to be added!
+<img src='flix_demo.gif' title='Flix App Demo' width='' alt='Flix App Demo' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ### Notes
-No challenges so far, but I suspect getting auto layout working will be tricky for me.
+Implementing auto-layout for different device sizes was a bit tricky, but I got it working!
