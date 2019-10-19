@@ -15,7 +15,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 #### BONUS
 - [X] (2pt) User can view the app on various device sizes and orientations.
-- [ ] (1pt) Run your app on a real device.
+- [X] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
 
@@ -25,3 +25,5 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ### Notes
 Implementing auto-layout for different device sizes was a bit tricky, but I got it working!
+
+I also ran into some issues when I tried to run my app on my device, but after some searching on StackOverflow I got it to work.
