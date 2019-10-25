@@ -21,6 +21,8 @@
 		FC5C7AC0235760DA00341900 /* flixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7ABF235760DA00341900 /* flixUITests.swift */; };
 		FC5C7ACE2357976200341900 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7ACD2357976200341900 /* MoviesViewController.swift */; };
 		FC7B6037236391F1009107C7 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B6036236391F1009107C7 /* MovieDetailsViewController.swift */; };
+		FC7B60392363A05C009107C7 /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B60382363A05C009107C7 /* MovieGridViewController.swift */; };
+		FC7B603B2363A48D009107C7 /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B603A2363A48D009107C7 /* MovieGridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		FC5C7AC1235760DA00341900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC5C7ACD2357976200341900 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		FC7B6036236391F1009107C7 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		FC7B60382363A05C009107C7 /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		FC7B603A2363A48D009107C7 /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 				FC5C7AA1235760D900341900 /* ViewController.swift */,
 				FC5C7AA3235760D900341900 /* Main.storyboard */,
 				FC7B6036236391F1009107C7 /* MovieDetailsViewController.swift */,
+				FC7B60382363A05C009107C7 /* MovieGridViewController.swift */,
+				FC7B603A2363A48D009107C7 /* MovieGridCell.swift */,
 				FC34D901235A43D8009B98CE /* MovieCell.swift */,
 				FC5C7ACD2357976200341900 /* MoviesViewController.swift */,
 				FC5C7AA6235760DA00341900 /* Assets.xcassets */,
@@ -419,6 +425,8 @@
 				FC5C7AA2235760D900341900 /* ViewController.swift in Sources */,
 				FC5C7A9E235760D900341900 /* AppDelegate.swift in Sources */,
 				FC7B6037236391F1009107C7 /* MovieDetailsViewController.swift in Sources */,
+				FC7B60392363A05C009107C7 /* MovieGridViewController.swift in Sources */,
+				FC7B603B2363A48D009107C7 /* MovieGridCell.swift in Sources */,
 				FC5C7AA0235760D900341900 /* SceneDelegate.swift in Sources */,
 				FC34D902235A43D8009B98CE /* MovieCell.swift in Sources */,
 				FC5C7ACE2357976200341900 /* MoviesViewController.swift in Sources */,
