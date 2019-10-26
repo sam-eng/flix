@@ -27,7 +27,6 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
         let width = (view.frame.size.width - layout.minimumInteritemSpacing*2) / 3
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
         
-        
         retrieveInfo()
         // Do any additional setup after loading the view.
     }
@@ -46,7 +45,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 // TODO: Get the array of movies
                 self.movies = dataDictionary["results"] as! [[String:Any]]
-                print(self.movies)
+                //print(self.movies)
                 
                 self.collectionView.reloadData()
             }
@@ -73,14 +72,24 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
         return cell
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        // Find selected movie
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let movie = movies[indexPath.item]
+        
+        // Store that movie into MovieDetailsViewController
+        let gridDetailsViewController = segue.destination as! MovieGridDetailsViewController
+        gridDetailsViewController.movie = movie
+        
+        // Deselect row in table
+        //tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
 
 }
